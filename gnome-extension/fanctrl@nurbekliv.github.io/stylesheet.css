@@ -1,0 +1,31 @@
+.fanctrl-panel-label {
+    margin-left: 5px;
+    font-feature-settings: "tnum";
+}
+
+.fanctrl-header {
+    font-weight: bold;
+}
+
+.fanctrl-banner {
+    color: #ff7b72;
+}
+
+.fanctrl-fan-value {
+    color: #b0b6c0;
+    margin-left: 12px;
+}
+
+.fanctrl-slider-row {
+    padding-top: 6px;
+    min-width: 260px;
+}
+
+.fanctrl-presets {
+    spacing: 6px;
+}
+
+.fanctrl-preset {
+    padding: 4px 6px;
+    min-width: 40px;
+}

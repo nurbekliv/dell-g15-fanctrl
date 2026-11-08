@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Name=Fan Control
+GenericName=Fan Controller
+GenericName[uz]=Kuler boshqaruvi
+Comment=Monitor and manually control the fans
+Comment[uz]=Kulerlarni kuzatish va qo'lda boshqarish
+Exec=/usr/local/bin/fanctrl-gui
+Icon=utilities-system-monitor
+Terminal=false
+Categories=System;Monitor;HardwareSettings;
+Keywords=fan;temperature;cooling;
+Keywords[uz]=fan;kuler;temperature;harorat;cooling;
+StartupNotify=true

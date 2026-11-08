@@ -1,0 +1,8 @@
+{
+  "uuid": "fanctrl@nurbekliv.github.io",
+  "name": "Fan Control",
+  "description": "Monitor and manually control the fans from the top panel (works with the fanctrld daemon)",
+  "shell-version": ["42", "43", "44"],
+  "version": 1,
+  "url": "https://github.com/nurbekliv/dell-g15-fanctrl"
+}

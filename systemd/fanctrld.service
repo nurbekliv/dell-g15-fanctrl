@@ -1,0 +1,30 @@
+[Unit]
+Description=fanctrld — fan monitoring and manual fan control daemon
+Documentation=file:///opt/fanctrl/README.md
+After=multi-user.target
+
+[Service]
+Type=simple
+Environment=PYTHONPATH=/opt/fanctrl
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/usr/bin/python3 -m fanctrl.daemon
+Restart=on-failure
+RestartSec=3
+
+# /var/lib/fanctrld holds the state file
+StateDirectory=fanctrld
+StateDirectoryMode=0750
+
+# Minimal hardening. Note: ProtectKernelTunables/PrivateDevices are left off —
+# they block writes to /sys/class/hwmon and break nvidia-smi.
+NoNewPrivileges=yes
+ProtectSystem=full
+ProtectHome=yes
+PrivateTmp=yes
+RestrictNamespaces=yes
+RestrictRealtime=yes
+LockPersonality=yes
+MemoryDenyWriteExecute=yes
+
+[Install]
+WantedBy=multi-user.target
